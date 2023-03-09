@@ -34,5 +34,10 @@ return {
       key = "F12",
       action = wezterm.action.EmitEvent "toggle-opacity",
     },
+    {
+      key = "w",
+      mods = "CTRL",
+      action = wezterm.action.CloseCurrentTab { confirm = false },
+    },
   },
 }
