@@ -39,5 +39,15 @@ return {
       mods = "CTRL | SHIFT",
       action = wezterm.action.CloseCurrentTab { confirm = false },
     },
+    {
+      key = "{",
+      mods = "CTRL | SHIFT",
+      action = wezterm.action.MoveTabRelative(-1),
+    },
+    {
+      key = "}",
+      mods = "CTRL | SHIFT",
+      action = wezterm.action.MoveTabRelative(1),
+    },
   },
 }
