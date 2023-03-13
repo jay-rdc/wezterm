@@ -17,7 +17,7 @@ wezterm.on("toggle-opacity", function (window, _)
 end)
 
 return {
-  default_prog = { "C:/Program Files/PowerShell/7/pwsh.exe", "-nologo" },
+  default_prog = { "pwsh.exe", "-NoLogo" },
   font = wezterm.font("CaskaydiaCove NF"),
   font_size = 14.0,
   color_scheme = "Tango (terminal.sexy)",
