@@ -51,5 +51,10 @@ return {
       mods = "CTRL | SHIFT",
       action = action.MoveTabRelative(1),
     },
+    {
+      key = "F",
+      mods = "CTRL | SHIFT",
+      action = action.Search({ CaseInSensitiveString = "" }),
+    },
   },
 }
