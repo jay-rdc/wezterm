@@ -1,4 +1,5 @@
-local wezterm = require "wezterm"
+local wezterm = require("wezterm")
+local action = wezterm.action
 local mux = wezterm.mux
 
 wezterm.on("gui-startup", function (cmd)
@@ -6,12 +7,13 @@ wezterm.on("gui-startup", function (cmd)
   window:gui_window():maximize()
 end)
 
+local default_opacity = 0.75
 wezterm.on("toggle-opacity", function (window, _)
   local overrides = window:get_config_overrides() or {}
   if overrides.window_background_opacity ~= 1 then
     overrides.window_background_opacity = 1
   else
-    overrides.window_background_opacity = 0.75
+    overrides.window_background_opacity = default_opacity
   end
   window:set_config_overrides(overrides)
 end)
@@ -21,7 +23,7 @@ return {
   font = wezterm.font("CaskaydiaCove NF"),
   font_size = 14.0,
   color_scheme = "Tango (terminal.sexy)",
-  window_background_opacity = 0.75,
+  window_background_opacity = default_opacity,
 
   colors = {
     cursor_fg = "black",
@@ -32,22 +34,22 @@ return {
   keys = {
     {
       key = "F12",
-      action = wezterm.action.EmitEvent "toggle-opacity",
+      action = action.EmitEvent("toggle-opacity"),
     },
     {
       key = "w",
       mods = "CTRL | SHIFT",
-      action = wezterm.action.CloseCurrentTab { confirm = false },
+      action = action.CloseCurrentTab({ confirm = false }),
     },
     {
       key = "{",
       mods = "CTRL | SHIFT",
-      action = wezterm.action.MoveTabRelative(-1),
+      action = action.MoveTabRelative(-1),
     },
     {
       key = "}",
       mods = "CTRL | SHIFT",
-      action = wezterm.action.MoveTabRelative(1),
+      action = action.MoveTabRelative(1),
     },
   },
 }
