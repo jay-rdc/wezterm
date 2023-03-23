@@ -2,13 +2,13 @@ local wezterm = require("wezterm")
 local action = wezterm.action
 local mux = wezterm.mux
 
-wezterm.on("gui-startup", function (cmd)
+wezterm.on("gui-startup", function(cmd)
   local _, _, window = mux.spawn_window(cmd or {})
   window:gui_window():maximize()
 end)
 
 local default_opacity = 0.75
-wezterm.on("toggle-opacity", function (window, _)
+wezterm.on("toggle-opacity", function(window, _)
   local overrides = window:get_config_overrides() or {}
   if overrides.window_background_opacity ~= 1 then
     overrides.window_background_opacity = 1
@@ -20,8 +20,9 @@ end)
 
 return {
   default_prog = { "pwsh.exe", "-NoLogo" },
-  font = wezterm.font("CaskaydiaCove NF"),
-  font_size = 14.0,
+  font = wezterm.font("JetBrainsMono NF", { weight = "DemiBold" }),
+  harfbuzz_features = { "zero" },
+  font_size = 13.5,
   color_scheme = "Tango (terminal.sexy)",
   window_background_opacity = default_opacity,
 
