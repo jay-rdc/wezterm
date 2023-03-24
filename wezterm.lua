@@ -25,6 +25,7 @@ return {
   font_size = 13.5,
   color_scheme = "Tango (terminal.sexy)",
   window_background_opacity = default_opacity,
+  window_decorations = "RESIZE",
 
   colors = {
     cursor_fg = "black",
