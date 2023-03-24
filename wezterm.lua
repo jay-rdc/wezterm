@@ -22,7 +22,7 @@ return {
   default_prog = { "pwsh.exe", "-NoLogo" },
   font = wezterm.font("JetBrainsMono NF", { weight = "DemiBold" }),
   harfbuzz_features = { "zero" },
-  font_size = 13.5,
+  font_size = 14.0,
   color_scheme = "Tango (terminal.sexy)",
   window_background_opacity = default_opacity,
   window_decorations = "RESIZE",
