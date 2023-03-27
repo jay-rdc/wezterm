@@ -39,7 +39,7 @@ return {
       action = action.EmitEvent("toggle-opacity"),
     },
     {
-      key = "w",
+      key = "W",
       mods = "CTRL | SHIFT",
       action = action.CloseCurrentTab({ confirm = false }),
     },
