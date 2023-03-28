@@ -44,6 +44,11 @@ return {
       action = action.CloseCurrentTab({ confirm = false }),
     },
     {
+      key = "Delete",
+      mods = "CTRL | SHIFT",
+      action = action.QuitApplication,
+    },
+    {
       key = "{",
       mods = "CTRL | SHIFT",
       action = action.MoveTabRelative(-1),
