@@ -26,6 +26,7 @@ return {
   color_scheme = "Tango (terminal.sexy)",
   window_background_opacity = default_opacity,
   window_decorations = "RESIZE",
+  audible_bell = "Disabled",
 
   colors = {
     cursor_fg = "black",
