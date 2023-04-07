@@ -1,5 +1,5 @@
 local wezterm = require("wezterm")
-local action = wezterm.action
+local keys = require("keys")
 local mux = wezterm.mux
 
 wezterm.on("gui-startup", function(cmd)
@@ -27,49 +27,11 @@ return {
   window_background_opacity = default_opacity,
   window_decorations = "RESIZE",
   audible_bell = "Disabled",
+  keys = keys,
 
   colors = {
     cursor_fg = "black",
     cursor_bg = "white",
     cursor_border = "white",
-  },
-
-  keys = {
-    {
-      key = "F12",
-      action = action.EmitEvent("toggle-opacity"),
-    },
-    {
-      key = "W",
-      mods = "CTRL | SHIFT",
-      action = action.CloseCurrentTab({ confirm = false }),
-    },
-    {
-      key = "Delete",
-      mods = "CTRL | SHIFT",
-      action = action.QuitApplication,
-    },
-    {
-      key = "{",
-      mods = "CTRL | SHIFT",
-      action = action.MoveTabRelative(-1),
-    },
-    {
-      key = "}",
-      mods = "CTRL | SHIFT",
-      action = action.MoveTabRelative(1),
-    },
-    {
-      key = "D",
-      mods = "CTRL | SHIFT",
-      action = action.ShowDebugOverlay,
-    },
-    {
-      key = "L",
-      mods = "CTRL | SHIFT",
-      action = action.SpawnCommandInNewTab({
-        args = { "wsl.exe", "--cd", "~" },
-      }),
-    },
   },
 }
