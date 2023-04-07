@@ -38,4 +38,9 @@ return {
         args = { "wsl.exe", "--cd", "~" },
       }),
     },
+    {
+      key = "Space",
+      mods = "CTRL | SHIFT",
+      action = action.ActivateCopyMode
+    },
 }
