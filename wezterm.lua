@@ -59,5 +59,17 @@ return {
       mods = "CTRL | SHIFT",
       action = action.MoveTabRelative(1),
     },
+    {
+      key = "D",
+      mods = "CTRL | SHIFT",
+      action = action.ShowDebugOverlay,
+    },
+    {
+      key = "L",
+      mods = "CTRL | SHIFT",
+      action = action.SpawnCommandInNewTab({
+        args = { "wsl.exe", "--cd", "~" },
+      }),
+    },
   },
 }
