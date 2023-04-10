@@ -28,6 +28,7 @@ return {
   enable_tab_bar = false,
   audible_bell = "Disabled",
   keys = keys,
+  cursor_blink_rate = 0,
 
   colors = {
     cursor_fg = "black",
