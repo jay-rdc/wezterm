@@ -28,7 +28,7 @@ return {
   },
   {
     key = "Space",
-    mods = "CTRL | SHIFT",
+    mods = "LEADER | CTRL",
     action = action.ActivateCopyMode
   },
 }
