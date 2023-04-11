@@ -13,9 +13,9 @@ return {
 
   { key = "|",      mods = "LEADER | SHIFT", action = action.SplitHorizontal({ domain = "CurrentPaneDomain" }) },
   { key = "_",      mods = "LEADER | SHIFT", action = action.SplitVertical({ domain = "CurrentPaneDomain" }) },
-  { key = "h",      mods = "LEADER",         action = action.ActivatePaneDirection("Left") },
-  { key = "l",      mods = "LEADER",         action = action.ActivatePaneDirection("Right") },
-  { key = "j",      mods = "LEADER",         action = action.ActivatePaneDirection("Down") },
-  { key = "k",      mods = "LEADER",         action = action.ActivatePaneDirection("Up") },
+  { key = "h",      mods = "LEADER | CTRL",  action = action.ActivatePaneDirection("Left") },
+  { key = "l",      mods = "LEADER | CTRL",  action = action.ActivatePaneDirection("Right") },
+  { key = "j",      mods = "LEADER | CTRL",  action = action.ActivatePaneDirection("Down") },
+  { key = "k",      mods = "LEADER | CTRL",  action = action.ActivatePaneDirection("Up") },
   { key = "p",      mods = "LEADER",         action = action.PaneSelect },
 }
