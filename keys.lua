@@ -41,4 +41,24 @@ return {
     mods = "LEADER | SHIFT ",
     action = action.SplitVertical({ domain = "CurrentPaneDomain" }),
   },
+  {
+    key = "h",
+    mods = "LEADER",
+    action = action.ActivatePaneDirection("Left"),
+  },
+  {
+    key = "l",
+    mods = "LEADER",
+    action = action.ActivatePaneDirection("Right"),
+  },
+  {
+    key = "j",
+    mods = "LEADER",
+    action = action.ActivatePaneDirection("Down"),
+  },
+  {
+    key = "k",
+    mods = "LEADER",
+    action = action.ActivatePaneDirection("Up"),
+  },
 }
