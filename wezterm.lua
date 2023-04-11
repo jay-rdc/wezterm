@@ -27,8 +27,10 @@ return {
   window_background_opacity = default_opacity,
   enable_tab_bar = false,
   audible_bell = "Disabled",
-  keys = keys,
   cursor_blink_rate = 0,
+
+  leader = { key = "Space", mods = "CTRL", timeout_milliseconds = 500 },
+  keys = keys,
 
   colors = {
     cursor_fg = "black",
