@@ -9,7 +9,7 @@ return {
   { key = "{",      mods = "CTRL | SHIFT",  action = action.MoveTabRelative(-1) },
   { key = "}",      mods = "CTRL | SHIFT",  action = action.MoveTabRelative(1) },
 
-  { key = "Space",  mods = "LEADER | CTRL",  action = action.ActivateCopyMode },
+  { key = "c",      mods = "LEADER | CTRL",  action = action.ActivateCopyMode },
 
   { key = "|",      mods = "LEADER | SHIFT", action = action.SplitHorizontal({ domain = "CurrentPaneDomain" }) },
   { key = "_",      mods = "LEADER | SHIFT", action = action.SplitVertical({ domain = "CurrentPaneDomain" }) },
