@@ -17,5 +17,5 @@ return {
   { key = "l",      mods = "LEADER | CTRL",  action = action.ActivatePaneDirection("Right") },
   { key = "j",      mods = "LEADER | CTRL",  action = action.ActivatePaneDirection("Down") },
   { key = "k",      mods = "LEADER | CTRL",  action = action.ActivatePaneDirection("Up") },
-  { key = "p",      mods = "LEADER",         action = action.PaneSelect },
+  { key = "p",      mods = "LEADER | CTRL",  action = action.PaneSelect },
 }
