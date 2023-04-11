@@ -31,4 +31,14 @@ return {
     mods = "LEADER | CTRL",
     action = action.ActivateCopyMode
   },
+  {
+    key = "|",
+    mods = "LEADER | SHIFT ",
+    action = action.SplitHorizontal({ domain = "CurrentPaneDomain" }),
+  },
+  {
+    key = "_",
+    mods = "LEADER | SHIFT ",
+    action = action.SplitVertical({ domain = "CurrentPaneDomain" }),
+  },
 }
