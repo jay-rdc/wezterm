@@ -19,7 +19,7 @@ wezterm.on("toggle-opacity", function(window, _)
 end)
 
 return {
-  default_prog = { "pwsh.exe", "-NoLogo" },
+  default_prog = { "wsl.exe", "--cd", "~" },
   font = wezterm.font("JetBrainsMono NF", { weight = "Medium" }),
   harfbuzz_features = { "zero" },
   font_size = 14.0,
