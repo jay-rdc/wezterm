@@ -19,4 +19,5 @@ return {
 
   { key = "c",      mods = "LEADER | CTRL",  action = action.ActivateCopyMode },
   { key = "f",      mods = "LEADER | CTRL",  action = action.Search("CurrentSelectionOrEmptyString") },
+  { key = "z",      mods = "LEADER | CTRL",  action = action.TogglePaneZoomState },
 }
