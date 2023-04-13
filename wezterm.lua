@@ -33,6 +33,7 @@ return {
   keys = keys,
   key_tables = {
     search_mode = {
+      { key = "r",      mods = "CTRL", action = wezterm.action.CopyMode("CycleMatchType") },
       { key = "k",      mods = "CTRL", action = wezterm.action.CopyMode("PriorMatch") },
       { key = "j",      mods = "CTRL", action = wezterm.action.CopyMode("NextMatch") },
       { key = "u",      mods = "CTRL", action = wezterm.action.CopyMode("ClearPattern") },
