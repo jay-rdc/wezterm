@@ -31,6 +31,14 @@ return {
 
   leader = { key = "Space", mods = "CTRL", timeout_milliseconds = 500 },
   keys = keys,
+  key_tables = {
+    search_mode = {
+      { key = "k", mods = "CTRL", action = wezterm.action.CopyMode("PriorMatch") },
+      { key = "j", mods = "CTRL", action = wezterm.action.CopyMode("NextMatch") },
+      { key = "u", mods = "CTRL", action = wezterm.action.CopyMode("ClearPattern") },
+      { key = "c", mods = "CTRL", action = wezterm.action.CopyMode("Close") },
+    },
+  },
 
   colors = {
     cursor_fg = "black",
