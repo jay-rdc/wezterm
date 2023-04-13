@@ -9,8 +9,6 @@ return {
   { key = "{",      mods = "CTRL | SHIFT",  action = action.MoveTabRelative(-1) },
   { key = "}",      mods = "CTRL | SHIFT",  action = action.MoveTabRelative(1) },
 
-  { key = "c",      mods = "LEADER | CTRL",  action = action.ActivateCopyMode },
-
   { key = "|",      mods = "LEADER | SHIFT", action = action.SplitHorizontal({ domain = "CurrentPaneDomain" }) },
   { key = "_",      mods = "LEADER | SHIFT", action = action.SplitVertical({ domain = "CurrentPaneDomain" }) },
   { key = "h",      mods = "LEADER | CTRL",  action = action.ActivatePaneDirection("Left") },
@@ -18,4 +16,7 @@ return {
   { key = "j",      mods = "LEADER | CTRL",  action = action.ActivatePaneDirection("Down") },
   { key = "k",      mods = "LEADER | CTRL",  action = action.ActivatePaneDirection("Up") },
   { key = "p",      mods = "LEADER | CTRL",  action = action.PaneSelect },
+
+  { key = "c",      mods = "LEADER | CTRL",  action = action.ActivateCopyMode },
+  { key = "f",      mods = "LEADER | CTRL",  action = action.Search("CurrentSelectionOrEmptyString") },
 }
