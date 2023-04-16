@@ -1,5 +1,5 @@
 local wezterm = require("wezterm")
-local keys = require("keys")
+local keymaps = require("keymaps")
 local mux = wezterm.mux
 
 wezterm.on("gui-startup", function(cmd)
@@ -29,18 +29,9 @@ return {
   audible_bell = "Disabled",
   cursor_blink_rate = 0,
 
-  leader = { key = "Space", mods = "CTRL", timeout_milliseconds = 500 },
-  keys = keys,
-  key_tables = {
-    search_mode = {
-      { key = "r",      mods = "CTRL", action = wezterm.action.CopyMode("CycleMatchType") },
-      { key = "k",      mods = "CTRL", action = wezterm.action.CopyMode("PriorMatch") },
-      { key = "j",      mods = "CTRL", action = wezterm.action.CopyMode("NextMatch") },
-      { key = "u",      mods = "CTRL", action = wezterm.action.CopyMode("ClearPattern") },
-      { key = "c",      mods = "CTRL", action = wezterm.action.CopyMode("Close") },
-      { key = "Escape", mods = "NONE", action = wezterm.action.CopyMode("Close") },
-    },
-  },
+  leader = keymaps.leader,
+  keys = keymaps.keys,
+  key_tables = keymaps.key_tables,
 
   colors = {
     cursor_fg = "black",
