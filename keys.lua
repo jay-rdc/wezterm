@@ -16,8 +16,8 @@ return {
   { key = "j",      mods = "LEADER | CTRL",  action = action.ActivatePaneDirection("Down") },
   { key = "k",      mods = "LEADER | CTRL",  action = action.ActivatePaneDirection("Up") },
   { key = "p",      mods = "LEADER | CTRL",  action = action.PaneSelect },
+  { key = "z",      mods = "LEADER | CTRL",  action = action.TogglePaneZoomState },
 
   { key = "c",      mods = "LEADER | CTRL",  action = action.ActivateCopyMode },
   { key = "f",      mods = "LEADER | CTRL",  action = action.Search("CurrentSelectionOrEmptyString") },
-  { key = "z",      mods = "LEADER | CTRL",  action = action.TogglePaneZoomState },
 }
