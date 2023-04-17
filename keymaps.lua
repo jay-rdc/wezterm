@@ -7,10 +7,24 @@ return {
   keys = {
     { key = "F12",                             action = action.EmitEvent("toggle-opacity") },
 
-    { key = "w",      mods = "CTRL | SHIFT",   action = action.CloseCurrentTab({ confirm = false }) },
+    { key = "p",      mods = "CTRL | SHIFT",   action = action.ActivateCommandPalette },
+    { key = "Delete", mods = "CTRL | SHIFT",   action = action.QuitApplication },
+
     { key = "{",      mods = "CTRL | SHIFT",   action = action.MoveTabRelative(-1) },
     { key = "}",      mods = "CTRL | SHIFT",   action = action.MoveTabRelative(1) },
-    { key = "Delete", mods = "CTRL | SHIFT",   action = action.QuitApplication },
+    { key = "[",      mods = "LEADER | CTRL",  action = action.ActivateTabRelative(-1) },
+    { key = "]",      mods = "LEADER | CTRL",  action = action.ActivateTabRelative(1) },
+    { key = "t",      mods = "LEADER | CTRL",  action = action.SpawnTab("CurrentPaneDomain") },
+    { key = "w",      mods = "LEADER | CTRL",  action = action.CloseCurrentTab({ confirm = false }) },
+    { key = "1",      mods = "LEADER | CTRL",  action = action.ActivateTab(0) },
+    { key = "2",      mods = "LEADER | CTRL",  action = action.ActivateTab(1) },
+    { key = "3",      mods = "LEADER | CTRL",  action = action.ActivateTab(2) },
+    { key = "4",      mods = "LEADER | CTRL",  action = action.ActivateTab(3) },
+    { key = "5",      mods = "LEADER | CTRL",  action = action.ActivateTab(4) },
+    { key = "6",      mods = "LEADER | CTRL",  action = action.ActivateTab(5) },
+    { key = "7",      mods = "LEADER | CTRL",  action = action.ActivateTab(6) },
+    { key = "8",      mods = "LEADER | CTRL",  action = action.ActivateTab(7) },
+    { key = "9",      mods = "LEADER | CTRL",  action = action.ActivateTab(8) },
 
     { key = "|",      mods = "LEADER | SHIFT", action = action.SplitHorizontal({ domain = "CurrentPaneDomain" }) },
     { key = "_",      mods = "LEADER | SHIFT", action = action.SplitVertical({ domain = "CurrentPaneDomain" }) },
