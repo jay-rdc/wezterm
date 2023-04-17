@@ -7,8 +7,10 @@ return {
   keys = {
     { key = "F12",                             action = action.EmitEvent("toggle-opacity") },
 
-    { key = "p",      mods = "CTRL | SHIFT",   action = action.ActivateCommandPalette },
     { key = "Delete", mods = "CTRL | SHIFT",   action = action.QuitApplication },
+    { key = "p",      mods = "CTRL | SHIFT",   action = action.ActivateCommandPalette },
+    { key = "c",      mods = "CTRL | SHIFT",   action = action.CopyTo("Clipboard") },
+    { key = "v",      mods = "CTRL | SHIFT",   action = action.PasteFrom("Clipboard") },
 
     { key = "{",      mods = "CTRL | SHIFT",   action = action.MoveTabRelative(-1) },
     { key = "}",      mods = "CTRL | SHIFT",   action = action.MoveTabRelative(1) },
