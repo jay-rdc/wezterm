@@ -29,6 +29,7 @@ return {
   audible_bell = "Disabled",
   cursor_blink_rate = 0,
 
+  disable_default_key_bindings = true,
   leader = keymaps.leader,
   keys = keymaps.keys,
   key_tables = keymaps.key_tables,
