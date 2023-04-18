@@ -14,8 +14,8 @@ return {
 
     { key = "{",      mods = "CTRL | SHIFT",   action = action.MoveTabRelative(-1) },
     { key = "}",      mods = "CTRL | SHIFT",   action = action.MoveTabRelative(1) },
-    { key = "[",      mods = "LEADER | CTRL",  action = action.ActivateTabRelative(-1) },
-    { key = "]",      mods = "LEADER | CTRL",  action = action.ActivateTabRelative(1) },
+    { key = ",",      mods = "LEADER | CTRL",  action = action.ActivateTabRelative(-1) },
+    { key = ".",      mods = "LEADER | CTRL",  action = action.ActivateTabRelative(1) },
     { key = "t",      mods = "LEADER | CTRL",  action = action.SpawnTab("CurrentPaneDomain") },
     { key = "w",      mods = "LEADER | CTRL",  action = action.CloseCurrentTab({ confirm = false }) },
     { key = "1",      mods = "LEADER | CTRL",  action = action.ActivateTab(0) },
