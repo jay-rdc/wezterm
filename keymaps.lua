@@ -42,6 +42,8 @@ return {
 
     { key = "c",      mods = "LEADER | CTRL",  action = action.ActivateCopyMode },
     { key = "f",      mods = "LEADER | CTRL",  action = action.Search("CurrentSelectionOrEmptyString") },
+
+    { key = "m",      mods = "LEADER | CTRL",  action = action.Hide },
   },
 
   key_tables = {
