@@ -14,6 +14,8 @@ return {
 
     { key = "{",      mods = "CTRL | SHIFT",   action = action.MoveTabRelative(-1) },
     { key = "}",      mods = "CTRL | SHIFT",   action = action.MoveTabRelative(1) },
+    { key = "[",      mods = "LEADER | CTRL",  action = action.RotatePanes("CounterClockwise") },
+    { key = "]",      mods = "LEADER | CTRL",  action = action.RotatePanes("Clockwise") },
     { key = ",",      mods = "LEADER | CTRL",  action = action.ActivateTabRelative(-1) },
     { key = ".",      mods = "LEADER | CTRL",  action = action.ActivateTabRelative(1) },
     { key = "t",      mods = "LEADER | CTRL",  action = action.SpawnTab("CurrentPaneDomain") },
