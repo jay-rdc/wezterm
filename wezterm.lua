@@ -35,6 +35,7 @@ return {
   key_tables = keymaps.key_tables,
 
   colors = {
+    background = "black",
     cursor_fg = "black",
     cursor_bg = "white",
     cursor_border = "white",
