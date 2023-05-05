@@ -24,6 +24,7 @@ return {
   font_size = 14.0,
   color_scheme = "Tango (terminal.sexy)",
   window_background_opacity = default_opacity,
+  window_decorations = "RESIZE",
   enable_tab_bar = false,
   audible_bell = "Disabled",
   cursor_blink_rate = 0,
