@@ -8,10 +8,14 @@ return {
     { key = "-",      mods = "CTRL",           action = action.DecreaseFontSize },
     { key = "=",      mods = "CTRL",           action = action.IncreaseFontSize },
     { key = "0",      mods = "CTRL",           action = action.ResetFontSize },
-    { key = "Delete", mods = "CTRL | SHIFT",   action = action.QuitApplication },
     { key = "p",      mods = "CTRL | SHIFT",   action = action.ActivateCommandPalette },
     { key = "c",      mods = "CTRL | SHIFT",   action = action.CopyTo("Clipboard") },
     { key = "v",      mods = "CTRL | SHIFT",   action = action.PasteFrom("Clipboard") },
     { key = "m",      mods = "CTRL | SHIFT",   action = action.Hide },
+
+    { key = "n",      mods = "CTRL | SHIFT",   action = action.SpawnTab("CurrentPaneDomain") },
+    { key = "<",      mods = "CTRL | SHIFT",   action = action.ActivateTabRelative(-1) },
+    { key = ">",      mods = "CTRL | SHIFT",   action = action.ActivateTabRelative(1) },
+    { key = "Delete", mods = "CTRL | SHIFT",   action = action.CloseCurrentTab({ confirm = false }) },
   },
 }
