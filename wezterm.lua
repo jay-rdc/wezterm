@@ -20,7 +20,7 @@ end)
 
 return {
   default_prog = { "wsl.exe", "--cd", "~" },
-  font = wezterm.font("JetBrainsMonoNL NF", { weight = "Medium" }),
+  font = wezterm.font("JetBrainsMonoNL Nerd Font", { weight = "Medium" }),
   font_size = 14.0,
   color_scheme = "Tango (terminal.sexy)",
   window_background_opacity = default_opacity,
