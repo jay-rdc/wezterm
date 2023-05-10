@@ -19,7 +19,7 @@ wezterm.on("toggle-opacity", function(window, _)
 end)
 
 return {
-  default_prog = { "wsl.exe", "--cd", "~" },
+  default_prog = { "wsl", "--cd", "~" },
   font = wezterm.font("JetBrainsMonoNL Nerd Font", { weight = "Medium" }),
   font_size = 14.0,
   color_scheme = "Tango (terminal.sexy)",
