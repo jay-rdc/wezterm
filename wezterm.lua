@@ -25,7 +25,7 @@ return {
   color_scheme = "Tango (terminal.sexy)",
   window_background_opacity = default_opacity,
   window_decorations = "RESIZE",
-  enable_tab_bar = false,
+  hide_tab_bar_if_only_one_tab = true,
   audible_bell = "Disabled",
   cursor_blink_rate = 0,
 
