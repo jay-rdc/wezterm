@@ -18,6 +18,27 @@ wezterm.on("toggle-opacity", function(window, _)
   window:set_config_overrides(overrides)
 end)
 
+local default_colors = {
+  background = "black",
+  cursor_fg = "black",
+  cursor_bg = "white",
+  cursor_border = "white",
+}
+wezterm.on("toggle-light-dark", function(window, _)
+  local overrides = window:get_config_overrides() or {}
+  if overrides.colors.background == "black" then
+    overrides.colors = {
+      background = "white",
+      cursor_fg = "white",
+      cursor_bg = "black",
+      cursor_border = "black",
+    }
+  else
+    overrides.colors = default_colors
+  end
+  window:set_config_overrides(overrides)
+end)
+
 return {
   default_prog = { "wsl", "--cd", "~" },
   font = wezterm.font("JetBrainsMonoNL Nerd Font", { weight = "Medium" }),
@@ -32,12 +53,7 @@ return {
   disable_default_key_bindings = true,
   keys = keymaps.keys,
 
-  colors = {
-    background = "black",
-    cursor_fg = "black",
-    cursor_bg = "white",
-    cursor_border = "white",
-  },
+  colors = default_colors,
 
   window_padding = {
     left = 10,

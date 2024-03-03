@@ -3,6 +3,7 @@ local action = wezterm.action
 
 return {
   keys = {
+    { key = "F11",                             action = action.EmitEvent("toggle-light-dark") },
     { key = "F12",                             action = action.EmitEvent("toggle-opacity") },
 
     { key = "-",      mods = "CTRL",           action = action.DecreaseFontSize },
