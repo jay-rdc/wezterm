@@ -26,6 +26,9 @@ local default_colors = {
 }
 wezterm.on("toggle-light-dark", function(window, _)
   local overrides = window:get_config_overrides() or {}
+  if overrides.colors == nil then
+    overrides.colors = default_colors
+  end
   if overrides.colors.background == "black" then
     overrides.colors = {
       background = "white",
