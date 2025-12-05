@@ -63,4 +63,7 @@ return {
     top = 10,
     bottom = 10,
   },
+
+  -- this fixes the window border not being affected by the config
+  enable_wayland = false,
 }
